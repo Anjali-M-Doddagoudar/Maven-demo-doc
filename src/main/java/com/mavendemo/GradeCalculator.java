@@ -21,4 +21,15 @@ public class GradeCalculator {
             return "F";
         }
     }
+
+    public static void main(String[] args) {
+        GradeCalculator calculator = new GradeCalculator();
+
+        int[] testMarks = {95, 82, 76, 65, 54, 38};
+
+        for (int marks : testMarks) {
+            String grade = calculator.calculateGrade(marks);
+            System.out.println("Marks: " + marks + " | Grade: " + grade);
+        }
+    }
 }
